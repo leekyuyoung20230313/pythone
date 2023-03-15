@@ -1,0 +1,78 @@
+1.다음 중 파이썬에서 사용하는 데이터 타입이 아닌 것은?
+a. int
+b. str
+c. float
+d. bool
+
+2.다음 중 파이썬의 주석 기호는?
+a. //
+b. #
+c. /*
+d. //
+
+3.다음 코드의 실행 결과는 무엇인가요?
+x = 10
+if x > 5:
+    print("x는 5보다 큽니다.")
+else:
+    print("x는 5보다 작거나 같습니다.")
+
+a. x는 5보다 큽니다.
+b. x는 5보다 작거나 같습니다.
+c. x는 5입니다.
+d. 에러가 발생합니다.
+
+4.다음 중 파이썬에서 사용되는 반복문이 아닌 것은?
+a. for
+b. while
+c. until
+d. None of the above
+
+5.다음 중 파이썬에서 리스트(List)를 만들 때 사용하는 기호는?
+a. {}
+b. []
+c. ()
+d. //
+
+6.다음 코드의 실행 결과는 무엇인가요?
+numbers = [1, 2, 3, 4, 5]
+squares = [n ** 2 for n in numbers if n % 2 == 0]
+print(squares)
+
+a. [1, 4, 9, 16, 25]
+b. [4, 16]
+c. [2, 4, 6, 8, 10]
+d. 에러가 발생합니다.
+
+7.다음 중 파이썬에서 사용되는 비교 연산자가 아닌 것은?
+a. ==
+b. !=
+c. <=
+d. ++
+
+8.다음 코드의 실행 결과는 무엇인가요?
+def calculate(x, y):
+    return x + y
+
+result = calculate(3, 4)
+print(result)
+a. 3
+b. 4
+c. 7
+d. 에러가 발생합니다.
+
+9.다음 중 파이썬에서 사용되는 논리 연산자가 아닌 것은?
+a. and
+b. or
+c. not
+d. //
+
+10.다음 코드의 실행 결과는 무엇인가요?
+
+name = "Alice"
+age = 25
+print(f"My name is {name} and I am {age} years old.")
+a. My name is Alice and I am 25 years old.
+b. My name is {name} and I am {age} years old.
+c. My name is "Alice" and I am 25 years old.
+d. My name is "Alice" and I am "25" years old.
