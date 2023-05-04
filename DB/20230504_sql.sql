@@ -183,16 +183,32 @@ orders where orderid = (
         )
 )
 ;
--- 도서의 판매액 평균보다 자신의 구매액 평균이 더 높은 고객의 이름
+-- 도서의 판매액 평균보다 각 고객의 구매액 평균이 더 높은 고객의 이름
 select
     c.custid, 
-    (select t.name from customer t where t.custid = c.custid) name,
+    (select t.name from customer t where t.custid = c.custid) name,    
     avg(o.saleprice) avgprice
 from orders o, customer c
     where o.custid = c.custid
-    group by c.custid
+    group by c.custid    
 having avg(o.saleprice) > ( select avg(saleprice) from orders)
 ;
 
+select name from customer where custid = 1;
 
+
+-- 구매고객의 아이디
+select
+c.custid, avg(o.saleprice)
+--(select t.name from customer t where t.custid = c.custid) name
+from orders o, customer c
+where o.custid = c.custid
+group  by c.custid
+having avg(o.saleprice) > (select avg(saleprice) from orders)
+;
+
+select avg(saleprice) from orders;  --saleprice
+
+
+select t.name from customer t where t.custid = 3;
 
