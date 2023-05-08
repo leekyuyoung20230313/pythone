@@ -256,7 +256,12 @@ select * from orders;
 
 alter table orders add custname varchar2(40);
 
-
+update orders o
+set o.custname = (
+    select c.name
+    from customer c
+    where c.custid = o.custid
+);
 
 
 
