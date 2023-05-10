@@ -1,0 +1,13 @@
+CREATE OR REPLACE PROCEDURE PS_INSERTCUSTOMER 
+(
+  NAME IN VARCHAR2 
+, ADDRESS IN VARCHAR2 
+, PHONE IN VARCHAR2 
+) AS 
+BEGIN
+  insert into customer(custid, NAME,ADDRESS,PHONE)
+ values(
+    (select max(custid)+1 from customer),
+        NAME,ADDRESS,PHONE
+     );
+END PS_INSERTCUSTOMER;
