@@ -1,0 +1,21 @@
+터미널에서
+
+conda activate 사용자
+conda install pip
+bin/pip install oracledb
+
+진행하시고
+import oracledb as cx_Oracle
+
+connection = cx_Oracle.connect(user=username, password=password, dsn=dsn)
+
+수정하시고 오류 생기면
+
+dsn = cx_Oracle.makedsn(host, port, service_name=sid)
+
+이것도 변경하시면 실행됩니다.
+
+사용자가 base 일 때는 opt/anaconda3/bin/pip install oracledb로 하셔야 됩니다.
+
+사용자마다 env 위치가 달라서
+conda env list 치시고, 확인하셔서 해당 경로 입력/bin/pip install oracledb 하시면 됩니다.
